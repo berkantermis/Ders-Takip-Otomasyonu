@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafxdeneme2.CourseDetailController">
+    <!-- Üst Kısım: Başlık Çubuğu -->
+    <top>
+        <HBox alignment="CENTER" prefHeight="55.0" style="-fx-background-color: #a255ae; -fx-padding: 10px;">
+            <children>
+                <Region prefWidth="20.0" />
+                <ImageView fx:id="headerImage" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/spartan (1).png" />
+                    </image>
+                </ImageView>
+                <Region HBox.hgrow="ALWAYS" />
+                <Label fx:id="courseTitleLabel" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" text="Kodila" />
+                <Region HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </top>
+
+    <!-- Orta Kısım: Kurs Detayları -->
+    <center>
+        <VBox alignment="CENTER" spacing="20.0" style="-fx-padding: 20px;">
+            <children>
+                <!-- Kurs Görseli -->
+                <ImageView fx:id="courseImage" fitHeight="300.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" />
+                <!-- Kurs Bilgileri -->
+                <Label fx:id="courseNameLabel" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Kurs Adı: " />
+                <Label fx:id="instructorLabel" style="-fx-font-size: 14px;" text="Eğitmen: " />
+                <Label fx:id="durationLabel" style="-fx-font-size: 14px;" text="Süre: " />
+                <Label fx:id="languageLabel" style="-fx-font-size: 14px;" text="Eğitim Dili: " />
+                <Label fx:id="descriptionLabel" prefHeight="43.0" prefWidth="760.0" style="-fx-font-size: 14px;" wrapText="true" />
+            </children>
+        </VBox>
+    </center>
+
+    <!-- Alt Kısım: Düğmeler -->
+    <bottom>
+        <HBox alignment="CENTER" spacing="20.0" style="-fx-padding: 20px;">
+            <children>
+                <Button fx:id="startCourse_button" onAction="#startCourse" style="-fx-background-color: #a255ae; -fx-text-fill: white; -fx-font-size: 14px;" text="Derse Başla" />
+                <Button fx:id="back_button" onAction="#goBack" style="-fx-background-color: #34495e; -fx-text-fill: white; -fx-font-size: 14px;" text="Geri Dön" />
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

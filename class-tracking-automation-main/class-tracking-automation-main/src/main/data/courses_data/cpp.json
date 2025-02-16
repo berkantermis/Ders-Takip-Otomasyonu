@@ -1,0 +1,47 @@
+[
+  {
+    "sectionName": "Introduction to C++",
+    "lessons": [
+      {
+        "lessonName": "What is C++?",
+        "videoUrl": "/video/cpp.mp4",
+        "completed": true
+      },
+      {
+        "lessonName": "Setting up C++ Environment",
+        "videoUrl": "/video/cpp.mp4",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "sectionName": "C++ Basics",
+    "lessons": [
+      {
+        "lessonName": "Variables and Data Types in C++",
+        "videoUrl": "/video/cpp.mp4",
+        "completed": false
+      },
+      {
+        "lessonName": "Control Flow Statements in C++",
+        "videoUrl": "/video/cpp.mp4",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "sectionName": "Functions in C++",
+    "lessons": [
+      {
+        "lessonName": "Defining Functions in C++",
+        "videoUrl": "/video/cpp.mp4",
+        "completed": false
+      },
+      {
+        "lessonName": "Function Arguments and Return Values in C++",
+        "videoUrl": "/video/cpp.mp4",
+        "completed": false
+      }
+    ]
+  }
+]

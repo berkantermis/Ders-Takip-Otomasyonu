@@ -1,0 +1,62 @@
+[
+  {
+    "sectionName": "Introduction to Web Programming",
+    "lessons": [
+      {
+        "lessonName": "What is Web Programming?",
+        "videoUrl": "/video/webVideo.mp4",
+        "completed": true
+      },
+      {
+        "lessonName": "Setting up a Development Environment",
+        "videoUrl": "/video/webVideo.mp4",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "sectionName": "HTML Basics",
+    "lessons": [
+      {
+        "lessonName": "Introduction to HTML",
+        "videoUrl": "/video/webVideo.mp4",
+        "completed": false
+      },
+      {
+        "lessonName": "Creating Basic HTML Pages",
+        "videoUrl": "/video/webVideo.mp4",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "sectionName": "CSS Basics",
+    "lessons": [
+      {
+        "lessonName": "Introduction to CSS",
+        "videoUrl": "/video/webVideo.mp4",
+        "completed": false
+      },
+      {
+        "lessonName": "Styling HTML Elements",
+        "videoUrl": "/video/webVideo.mp4",
+        "completed": false
+      }
+    ]
+  },
+  {
+    "sectionName": "JavaScript Basics",
+    "lessons": [
+      {
+        "lessonName": "What is JavaScript?",
+        "videoUrl": "/video/webVideo.mp4",
+        "completed": false
+      },
+      {
+        "lessonName": "Adding Interactivity with JavaScript",
+        "videoUrl": "/video/webVideo.mp4",
+        "completed": false
+      }
+    ]
+  }
+]

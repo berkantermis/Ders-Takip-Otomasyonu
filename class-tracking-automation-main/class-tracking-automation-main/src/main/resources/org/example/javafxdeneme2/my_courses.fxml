@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafxdeneme2.MyCoursesController">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="55.0" style="-fx-background-color: #a255ae; -fx-padding: 10px;" BorderPane.alignment="CENTER">
+            <children>
+                <Region prefWidth="20.0" />
+                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="/image/spartan (1).png" />
+                    </image>
+                </ImageView>
+                <Region HBox.hgrow="ALWAYS" />
+                <Label text="Kodila">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Region HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </top>
+
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="438.0" style="-fx-background-color: #a255ae; -fx-padding: 10px;">
+            <children>
+                <Label style="-fx-text-fill: white;" text="Telif Hakkı © 2024 - Kodila" />
+            </children>
+        </HBox>
+    </bottom>
+
+    <center>
+        <VBox alignment="TOP_LEFT" spacing="20.0" BorderPane.alignment="CENTER" style="-fx-padding: 20px;">
+            <children>
+                <ImageView fitHeight="200.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="/image/courses_photos_folder.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </VBox>
+    </center>
+
+    <!-- VBox in the right section for the back button -->
+    <right>
+        <VBox alignment="BOTTOM_RIGHT" style="-fx-padding: 10px;">
+            <children>
+                <!-- Red Back button with fx:id and onAction -->
+                <Button fx:id="backButton" text="Geri Dön" style="-fx-background-color: red; -fx-text-fill: white;" onAction="#goBack"/>
+            </children>
+        </VBox>
+    </right>
+
+</BorderPane>

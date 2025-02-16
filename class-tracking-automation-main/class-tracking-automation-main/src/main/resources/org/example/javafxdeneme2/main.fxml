@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafxdeneme2.MainController">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="55.0" style="-fx-background-color: #a255ae; -fx-padding: 10px;" BorderPane.alignment="CENTER">
+            <children>
+                <Region prefWidth="20.0" />
+                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/spartan1.png" />
+                    </image>
+                </ImageView>
+                <Region HBox.hgrow="ALWAYS" />
+                <Label text="Kodila">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Region HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <HBox alignment="CENTER" spacing="20.0" style="-fx-background-color: #2c3e50; -fx-padding: 20px;" HBox.hgrow="ALWAYS">
+            <children>
+                <!-- Derslerim -->
+                <VBox alignment="CENTER" spacing="10.0" VBox.vgrow="ALWAYS">
+                    <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#derslerim_giris">
+                        <image>
+                            <Image url="@../../../image/programing.png" />
+                        </image>
+                    </ImageView>
+                    <Button fx:id="derslerim_button" onAction="#derslerim_giris" prefWidth="120.0" style="-fx-background-color: #34495e; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5px;" text="Derslerim" />
+                </VBox>
+                <!-- Tüm Kurslar -->
+                <VBox alignment="CENTER" spacing="10.0" VBox.vgrow="ALWAYS">
+                    <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#tum_kurslar_giris">
+                        <image>
+                            <Image url="@../../../image/coding-language.png" />
+                        </image>
+                    </ImageView>
+                    <Button fx:id="tum_kurslar_button" onAction="#tum_kurslar_giris" prefWidth="120.0" style="-fx-background-color: #34495e; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5px;" text="Tüm Kurslar" />
+                </VBox>
+                <!-- Profilim -->
+                <VBox alignment="CENTER" spacing="10.0" VBox.vgrow="ALWAYS">
+                    <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#profilim_giris">
+                        <image>
+                            <Image url="@../../../image/user-account.png" />
+                        </image>
+                    </ImageView>
+                    <Button fx:id="profilim_button" onAction="#profilim_giris" prefWidth="120.0" style="-fx-background-color: #34495e; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5px;" text="Profilim" />
+                </VBox>
+                <!-- Çıkış Yap -->
+                <VBox alignment="CENTER" spacing="10.0" VBox.vgrow="ALWAYS">
+                    <ImageView fitHeight="100.0" fitWidth="100.0" onMouseClicked="#cikis_yap">
+                        <image>
+                            <Image url="@../../../image/logout.png" />
+                        </image>
+                    </ImageView>
+                    <Button fx:id="cikis_yap_button" onAction="#cikis_yap" prefWidth="120.0" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold; -fx-background-radius: 5px;" text="Çıkış Yap" />
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="50.0" style="-fx-background-color: #a255ae; -fx-padding: 10px;">
+            <children>
+                <Label style="-fx-text-fill: white;" text="Telif Hakkı © 2024 - Kodila" />
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

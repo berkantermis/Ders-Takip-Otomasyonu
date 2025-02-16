@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafxdeneme2.AllCoursesControl">
+    <!-- Üst Kısım: Başlık Çubuğu -->
+    <top>
+        <HBox alignment="CENTER" prefHeight="55.0" style="-fx-background-color: #a255ae; -fx-padding: 10px;">
+            <children>
+                <Region prefWidth="20.0" />
+                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/spartan (1).png" />
+                    </image>
+                </ImageView>
+                <Region HBox.hgrow="ALWAYS" />
+                <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" text="Tüm Kurslar" />
+                <Region HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </top>
+
+    <!-- Sağ Kısım: Menü Çubuğu -->
+    <right>
+        <VBox prefHeight="489.0" prefWidth="167.0" spacing="10.0" style="-fx-background-color: #2c3e50; -fx-padding: 10px;">
+            <children>
+                <!-- Menü Kutucukları -->
+                <HBox alignment="CENTER" onMouseClicked="#derslerim_giris" prefHeight="50.0" style="-fx-background-color: #34495e; -fx-border-radius: 5px; -fx-background-radius: 5px; -fx-padding: 10px;">
+                    <Button fx:id="derslerim_button" alignment="CENTER" onAction="#derslerim_giris" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="Derslerim" />
+                </HBox>
+                <HBox alignment="CENTER" onMouseClicked="#tum_kurslar_giris" prefHeight="50.0" style="-fx-background-color: #34495e; -fx-border-radius: 5px; -fx-background-radius: 5px; -fx-padding: 10px;">
+                    <Button fx:id="tum_kurslar_button" alignment="CENTER" onAction="#tum_kurslar_giris" onMouseClicked="#tum_kurslar_giris" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="Tüm Kurslar" />
+                </HBox>
+                <HBox alignment="CENTER" onMouseClicked="#profilim_giris" prefHeight="50.0" style="-fx-background-color: #34495e; -fx-border-radius: 5px; -fx-background-radius: 5px; -fx-padding: 10px;">
+                    <Button fx:id="profilim_button" onAction="#profilim_giris" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="Profilim" />
+                </HBox>
+                <HBox alignment="CENTER" onMouseClicked="#cikis_yap" prefHeight="50.0" style="-fx-background-color: #e74c3c; -fx-border-radius: 5px; -fx-background-radius: 5px; -fx-padding: 10px;">
+                    <Button fx:id="cikis_yap_button" alignment="CENTER" onAction="#cikis_yap" onMouseClicked="#cikis_yap" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-weight: bold;" text="Çıkış Yap" />
+                </HBox>
+            </children>
+        </VBox>
+    </right>
+
+    <!-- Orta Kısım: Dinamik Ders Kartları -->
+    <center>
+        <ScrollPane fitToWidth="true" style="-fx-padding: 10px;">
+            <content>
+                <VBox fx:id="courseListContainer" spacing="20.0" style="-fx-padding: 10px;">
+                    <!-- Dinamik olarak ders kartları buraya eklenecek -->
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+
+    <!-- Alt Kısım: Footer -->
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="50.0" style="-fx-background-color: #a255ae; -fx-padding: 10px;">
+            <children>
+                <Label style="-fx-text-fill: white;" text="Telif Hakkı © 2024 - Kodila" />
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

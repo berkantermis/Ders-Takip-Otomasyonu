@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Java Programlama",
+    "instructor": "Scott Barrett",
+    "duration": "25 saat",
+    "description": "Bu kurs, Java programlama dilini öğrenmek isteyenler için başlangıç seviyesinden ileri seviyeye kadar kapsamlı bir eğitim sunar. Java'nın temel kavramlarından, nesne tabanlı programlamaya kadar detaylı bir içerik sunar.",
+    "imageUrl": "/image/courses_photos_folder.png",
+    "language": "English"
+  },
+  {
+    "name": "Python Programlama",
+    "instructor": "Angela Yu",
+    "duration": "15 saat",
+    "description": "Python programlama dilini öğrenmek için tasarlanmış bu kurs, veri analitiği, otomasyon ve yapay zeka gibi konulara temel bir giriş yaparak kullanıcı dostu bir başlangıç sağlar.",
+    "imageUrl": "/image/python_course.png",
+    "language": "English"
+  },
+  {
+    "name": "C++ Programlama",
+    "instructor": "Scott Barrett",
+    "duration": "22 saat",
+    "description": "C++ diline giriş yaparak bellek yönetimi, algoritmalar ve yüksek performanslı uygulamalar geliştirme gibi ileri düzey konuları kapsayan bir eğitim sunar.",
+    "imageUrl": "/image/Screenshot 2024-12-23 212918.png",
+    "language": "English"
+  },
+  {
+    "name": "WEB Programlama",
+    "instructor": "Angela Yu",
+    "duration": "50 saat",
+    "description": "HTML, CSS ve JavaScript gibi temel teknolojilerden başlayarak modern web uygulamaları geliştirmek için gereken tüm becerileri kazandıran kapsamlı bir kurs.",
+    "imageUrl": "/image/web_course.png",
+    "language": "English"
+  }
+]

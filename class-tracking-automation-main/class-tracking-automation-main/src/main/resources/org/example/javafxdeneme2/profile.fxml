@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="566.0" prefWidth="800.0" style="-fx-background-color: #2c3e50;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafxdeneme2.ProfileController">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="55.0" style="-fx-background-color: #a255ae; -fx-padding: 10px;" BorderPane.alignment="CENTER">
+            <children>
+                <Region prefWidth="20.0" />
+                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../image/spartan1.png" />
+                    </image>
+                </ImageView>
+                <Region HBox.hgrow="ALWAYS" />
+                <Label text="Kodila">
+                    <font>
+                        <Font name="System Bold" size="26.0" />
+                    </font>
+                </Label>
+                <Region HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <StackPane>
+            <VBox alignment="CENTER" prefWidth="438.0" spacing="20.0" style="-fx-padding: 20px;">
+                <children>
+                    <Label fx:id="usernameLabel" alignment="CENTER" text="Kullanıcı Email:" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="24.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="passwordLabel" alignment="CENTER" text="Şifre:" textFill="WHITE">
+                        <font>
+                            <Font name="System Bold" size="24.0" />
+                        </font>
+                    </Label>
+
+               <Button fx:id="back_button1" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="150.0" style="-fx-font-size: 18px;" text="Geri Dön" />
+                </children>
+            </VBox>
+        </StackPane>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="438.0" style="-fx-background-color: #a255ae; -fx-padding: 10px;">
+            <children>
+                <Label style="-fx-text-fill: white;" text="Telif Hakkı © 2024 - Kodila" />
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>
